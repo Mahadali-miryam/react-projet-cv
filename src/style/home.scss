@@ -1,0 +1,50 @@
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../assets/hero-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+
+  }   
+
+
+.col-12.col-md-6 {
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  
+
+  .btn-primary {
+    margin-top: 10px;
+  } 
+}  
+
+// Media query pour les tablettes
+@media (max-width: 768px) {
+  .home-container {
+    background-image: url('../assets/hero-bg-tablette.jpg');
+    background-size: cover;
+    background-position: center;
+    
+
+  }
+}
+
+// Media query pour les mobiles
+@media (max-width: 480px) {
+  .home-container {
+    background-image: url('../assets/hero-bg-mobile.jpg');
+    background-size: cover;
+    background-position: center;
+    
+
+  }
+}
