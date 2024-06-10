@@ -1,0 +1,73 @@
+.main-container {
+  .home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    background:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('../assets/hero-bg.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+  }   
+
+
+.col-12.col-md-6 {
+  display: flex;
+  flex-direction: column; 
+  text-align: center; 
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  
+
+  .btn-primary {
+    margin-top: 10px;
+  } 
+}  
+
+
+// Media query pour les tablettes
+@media (max-width: 768px) {
+  .home-container {
+    background-image: url('../assets/hero-bg-tablette.jpg');
+  
+  }
+}
+
+// Media query pour les mobiles
+@media (max-width: 480px) {
+  .home-container {
+    background-image: url('../assets/hero-bg-mobile.jpg');
+  
+  }
+}
+
+
+.about-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border: 2px solid #ccc; 
+  margin: 20px;
+}  
+
+@media (max-width: 768px) {
+  .about-image-container {
+      flex-direction: column;
+      border: none; 
+  }
+}
+
+.about-section, .img-section {
+  flex: 1; 
+}
+
+.photo-section img {
+  width: 100%; 
+ 
+  }
+}
+

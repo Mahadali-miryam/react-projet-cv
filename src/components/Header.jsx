@@ -16,7 +16,7 @@ function Header() {
             <NavLink className="nav-link" aria-current="page" to="/Home" activeClassName="active">Accueil</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/About"activeClassName="active">Services</NavLink>
+              <NavLink className="nav-link" to="/Services"activeClassName="active">Services</NavLink>
             </li>
             <li className="nav-item">
               <NavLink className="nav-link" to="/Projects"activeClassName="active">Réalisations</NavLink>
