@@ -22,6 +22,7 @@ import Services from './components/Services';
       </Routes>
       
       <Footer />
+      <button onClick={() => window.scrollTo(0, 0)} className="back-to-top">↑</button>
     </div>
   
   );

@@ -11,7 +11,11 @@
     background-position: center;
     color: #fff;
   }   
-
+  p {
+    color: #444; 
+    margin-top: 20px;
+    font-size: 20px; 
+  }
 
 .col-12.col-md-6 {
   display: flex;
@@ -27,47 +31,100 @@
   } 
 }  
 
-
-// Media query pour les tablettes
-@media (max-width: 768px) {
-  .home-container {
-    background-image: url('../assets/hero-bg-tablette.jpg');
-  
-  }
-}
-
-// Media query pour les mobiles
-@media (max-width: 480px) {
-  .home-container {
-    background-image: url('../assets/hero-bg-mobile.jpg');
-  
-  }
-}
-
-
 .about-image-container {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px;
-  border: 2px solid #ccc; 
+  padding: 40px;
   margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+
+  h1, h2, h3 {
+    color: #1e1e1e ; 
+  }
 }  
 
-@media (max-width: 768px) {
-  .about-image-container {
-      flex-direction: column;
-      border: none; 
-  }
-}
-
-.about-section, .img-section {
+.about-section
+{
+  flex: 1;
+  margin-top: -20px;
+  
+} 
+.img-section {
   flex: 1; 
+  padding: 20px;
 }
 
 .photo-section img {
   width: 100%; 
  
+}
+
+.progress-label{
+  margin-bottom: 5px;
+}
+}
+.back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border: none;
+  background-color: #EEE; /* Couleur de fond initiale */
+  color:#298eff;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 20px;
+  border-radius: 10%; /* Rend le bouton rond */
+}
+
+.back-to-top:hover {
+  background-color: #298eff; /* Change la couleur de fond au survol */
+  color: #EEE;
+}
+
+
+// Media query pour les tablettes
+@media (max-width: 768px) {
+  .main-container.home-container {
+    background-image: url('../assets/hero-bg-tablette.jpg');
+    .progress-bar {
+      height: 20px; 
+    }
+
+    .progress {
+      margin-bottom: 15px; 
+    }
+  }
+
+  .about-image-container {
+    flex-direction: column;
+  }
+
+.img-section {
+  order: 1; 
+  padding: 0 10px; 
+
+    img {
+      max-width: 100%; 
+      height: auto;
+   }
   }
 }
+
+
+
+// Media query pour les mobiles
+@media (max-width: 480px) {
+.main-container  .home-container {
+    background-image: url('../assets/hero-bg-mobile.jpg');
+    
+    .progress-bar {
+      height: 5px; 
+
+      .progress {
+        margin-bottom: 10px; 
+        }
+      }
+    } 
+  }
+
 
