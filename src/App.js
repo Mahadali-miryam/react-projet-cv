@@ -13,14 +13,16 @@ import Services from './components/Services';
    
     <div>
       <Header />
+     
       <Routes>
+          <Route path="/" element={<Home />} />
           <Route path="/Home" element={<Home />} />
           <Route path="/Services" element={<Services/>} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<Contact />} />
           <Route path="/Blog" element={<Blog />} />
       </Routes>
-      
+     
       <Footer />
       <button onClick={() => window.scrollTo(0, 0)} className="back-to-top">↑</button>
     </div>
