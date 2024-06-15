@@ -16,16 +16,16 @@ function Header() {
             <NavLink className="nav-link" aria-current="page" to="/Home" activeClassName="active">Accueil</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Services"activeClassName="active">Services</NavLink>
+              <NavLink className="nav-link" to="/Services" activeClassName="active">Services</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Projects"activeClassName="active">Réalisations</NavLink>
+              <NavLink className="nav-link" to="/Projects" activeClassName="active">Réalisations</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Blog"activeClassName="active">Blog</NavLink>
+              <NavLink className="nav-link" to="/Blog" activeClassName="active">Blog</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/Contact"activeClassName="active">Me contacter</NavLink>
+              <NavLink className="nav-link" to="/Contact" activeClassName="active">Me contacter</NavLink>
             </li>
           </ul>
         </div>

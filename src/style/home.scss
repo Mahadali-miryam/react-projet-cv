@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap');
+
+
 .main-container {
   .home-container {
     display: flex;
@@ -15,6 +18,7 @@
     color: #444; 
     margin-top: 20px;
     font-size: 20px; 
+    font-weight: 400
   }
 
 .col-12.col-md-6 {
@@ -38,8 +42,10 @@
   margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 
-  h1, h2, h3 {
-    color: #1e1e1e ; 
+  h1, h2, h3, strong{
+    color: #1e1e1e ;
+    font-weight: 600
+   }
   }
 }  
 
@@ -54,30 +60,28 @@
   padding: 20px;
 }
 
-.photo-section img {
-  width: 100%; 
- 
-}
+
 
 .progress-label{
   margin-bottom: 5px;
 }
-}
+
+
 .back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
   border: none;
-  background-color: #EEE; /* Couleur de fond initiale */
+  background-color: #EEE; 
   color:#298eff;
   cursor: pointer;
   padding: 10px;
   font-size: 20px;
-  border-radius: 10%; /* Rend le bouton rond */
+  border-radius: 10%; 
 }
 
 .back-to-top:hover {
-  background-color: #298eff; /* Change la couleur de fond au survol */
+  background-color: #298eff; 
   color: #EEE;
 }
 
@@ -101,7 +105,7 @@
 
 .img-section {
   order: 1; 
-  padding: 0 10px; 
+  padding:  10px; 
 
     img {
       max-width: 100%; 
@@ -115,7 +119,7 @@
 // Media query pour les mobiles
 @media (max-width: 480px) {
 .main-container  .home-container {
-    background-image: url('../assets/hero-bg-mobile.jpg');
+  background-image: url('../assets/hero-bg-mobile.jpg');
     
     .progress-bar {
       height: 5px; 
