@@ -60,10 +60,7 @@
   padding: 20px;
 }
 
-.photo-section img {
-  width: 100%; 
- 
-}
+
 
 .progress-label{
   margin-bottom: 5px;
@@ -122,7 +119,7 @@
 // Media query pour les mobiles
 @media (max-width: 480px) {
 .main-container  .home-container {
-    background-image: url('../assets/hero-bg-mobile.jpg');
+  background-image: url('../assets/hero-bg-mobile.jpg');
     
     .progress-bar {
       height: 5px; 

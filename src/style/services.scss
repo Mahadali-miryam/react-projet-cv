@@ -59,11 +59,11 @@ h2{
     width: 20%; 
     height: auto; 
   }
- 
 
-// Media query pour les tablettes
-@media (max-width: 768px) {
-    .img-section {
+
+// Media queries pour les tablettes
+@media (min-width: 768px)and (max-width: 1024px) {
+    .image-section {
         background-image: url('../assets/banner-tablette.jpg');
     }
     .container {
@@ -71,16 +71,27 @@ h2{
         justify-content: space-around; 
         flex-wrap: wrap;
   }
-    
+  .box {
+    width: calc(33.333% - 20px); 
+    margin: 10px; 
+}   
 }
 
-// Media query pour les mobiles
+// Media querie pour les mobiles
 @media (max-width: 480px) {
     .img-section {
         background-image: url('../assets/banner-mobile.jpg');
         
     } 
-
+    .container {
+      flex-direction: column; 
+      justify-content: center; 
+      align-items: center; 
+  }
+  .box {
+      width: 90%; 
+      margin: 10px 0;
+  }
 }
       
     
