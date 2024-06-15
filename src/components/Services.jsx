@@ -28,7 +28,7 @@ const Services = () => {
     return (
         <div>
             <div className="image-section">   
-            <img src={banner} alt="John Doe" />
+            <img src={banner} alt="Bannière bleue avec reflets blancs évoquant une sensation de dynamisme" />
             </div>
 
             <div className="m-container">
