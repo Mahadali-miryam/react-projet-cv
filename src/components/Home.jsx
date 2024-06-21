@@ -50,9 +50,8 @@ const Home = () => {
                 <ProfileSection bio={profile.bio} />
             </div>
 
-        <div className="img-section">   
+        <div className="img-section"> 
             <img src={johnDoeAbout} alt="John Doe" />
-
                 <h3>Compétences</h3>
                 <div className="progress-bar-container">
                     <div className="progress-label">HTML5 90%</div>

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import '../style/services.scss';
-import banner from '../assets/banner.jpg'; 
 import ordi from '../assets/ordi.png'; 
 import code from '../assets/code.png'; 
 import search from '../assets/search.png'; 
@@ -12,7 +11,7 @@ const ServicesSection = ({ title, subtitle }) => {
     return (
         <div className="services-section">
             <h1>{title}</h1>
-            <h3>{subtitle}</h3>   
+            <h2>{subtitle}</h2>   
             <div className="subtitle-style"></div>
         </div>
     );
@@ -26,16 +25,13 @@ const Services = () => {
 });
 
     return (
-        <div>
-            <div className="image-section">   
-            <img src={banner} alt="Bannière bleue avec reflets blancs évoquant une sensation de dynamisme" />
-            </div>
-
+        <div>   
+            <div className="image-section banner"></div>
             <div className="m-container">
                     <div className="col-12 col-md-6">
                         <ServicesSection title={services.title} subtitle={services.subtitle}/>
                      </div>
-                </div>
+            </div>
 
             <div className="container">
                 <div className="box">
@@ -43,16 +39,16 @@ const Services = () => {
                     <h2>ux design</h2>
                         <p>L'<strong>UX Design</strong> est une méthode de conception centrée sur l'utilisateur.
                         Son but est d'offrir une expérience de navigation optimale à l'internaute. </p>
-            </div>
+                </div>
 
-            <div className="box">
+                <div className="box">
                 <img src={code} alt="Logo 2" className="code"/>
-                <h2>Développeur web</h2>
+                <h2>Développeur WEB</h2>
                     <p>Le <strong>développement de sites web</strong>repose sur l'utilisation des languages HTML, CSS,
                      JavaScript et PHP. </p>
-            </div>
+                </div>
 
-            <div className="box">
+                <div className="box">
                 <img src={search} alt="Logo 3" className="search"/>
                     <h2>Référencement</h2>
                         <p>Le <strong>référencement naturel d'un site</strong>, aussi appelé SEO, 
