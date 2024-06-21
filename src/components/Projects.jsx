@@ -3,7 +3,7 @@ import '../style/projects.scss';
 import  FreshFood from'../assets/portfolio/fresh-food.jpg'
 import  RestaurantJaponais from'../assets/portfolio/restaurant-japonais.jpg'
 import  EspaceBienEtre from'../assets/portfolio/espace-bien-etre.jpg'
-import banner from '../assets/banner.jpg'; 
+
 
 // Fonction ou composant séparé pour l'affichage du profil
 const ProjectsSection = ({ title, subtitle }) => {
@@ -25,9 +25,8 @@ const Projects = () => {
 
 return (
     <div>
-    <div className="image-section">   
-            <img src={banner} alt="Bannière bleue avec reflets blancs évoquant une sensation de dynamisme" />
-    </div>
+    <div className="image-section banner"></div>
+    
     <div className="m-container">
         <div className="col-12 col-md-6">
             <ProjectsSection title={projects.title} subtitle={projects.subtitle}/>

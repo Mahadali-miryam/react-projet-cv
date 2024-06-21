@@ -7,7 +7,7 @@
       flex-direction: column;
       text-align: center;
       align-items: center;
-      
+  
      
       h1 {
         text-transform: uppercase;
@@ -19,16 +19,19 @@
       }
 
       .subtitle-style {
-        border-Bottom: 3px solid blue;
-        width: 25%;
+        border-Bottom: 4px solid blue;
+        width: 40%;
         margin: auto;
         display: inline-block;
         font-weight: 600; 
       }
     
 
-h2{
-    text-transform: uppercase; 
+.banner {
+  background-image: url('../assets/banner.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 200px; 
 }
 
 .img-section{
@@ -37,9 +40,7 @@ h2{
 
 .container {
     display: flex;
-    justify-content: space-between; 
     flex-wrap: wrap; 
-    padding: 20px ;
 }  
 
   .box {
@@ -52,7 +53,7 @@ h2{
     flex-direction: column; 
     align-items: center; 
     text-align: center; 
-    padding: 20px; 
+    padding: 10px; 
   }
 
   .box img {
@@ -63,30 +64,37 @@ h2{
 
 // Media queries pour les tablettes
 @media (min-width: 768px)and (max-width: 1024px) {
-    .image-section {
-        background-image: url('../assets/banner-tablette.jpg');
+    .banner {
+      background-image: url('../assets/banner-tablette.jpg'); 
+      background-size: cover;
+      background-position: center;
+      height: 150px; 
     }
-    .container {
-        flex-direction: row; 
-        justify-content: space-around; 
-        flex-wrap: wrap;
-  }
   .box {
-    width: calc(33.333% - 20px); 
-    margin: 10px; 
-}   
+    width: calc(33% - 15px); 
+   margin: 20px;
+   
+}
+.box h2 {
+  font-size: 1.4em; 
+  margin: 0.5em 0; 
+}
+.subtitle-style {
+  border-bottom: 4px solid blue;
+  width: 30%;
+}  
 }
 
 // Media querie pour les mobiles
 @media (max-width: 480px) {
-    .image-section {
-        background-image: url('../assets/banner-mobile.jpg');
-        
-    } 
-    .container {
-      flex-direction: column; 
-      justify-content: center; 
-      align-items: center; 
+  .banner {
+    background-image: url('../assets/banner-mobile.jpg'); 
+    background-size: cover;
+    background-position: center;
+    height: 100px; 
+  }      
+  .subtitle-style {
+    width: 20%; 
   }
   .box {
       width: 90%; 

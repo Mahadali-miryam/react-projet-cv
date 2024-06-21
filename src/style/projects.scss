@@ -4,7 +4,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    
+    padding: 90px;
 }
 
 .card-body {
@@ -30,35 +30,27 @@
 }
   
   // Media Query pour les tablettes
-  @media (max-width: 768px)and (max-width: 1024px) {
+  @media (min-width: 768px)and (max-width: 1024px) {
     .container {
       justify-content: center;
+      padding: 30px;
     }
   
     .card {
-      width: 16rem; 
-    }
-    
-    .img-section {
-        background-image: url('../assets/banner-tablette.jpg');
-        
+      width: calc(50% - 20px); 
+      margin: 10px; 
     } 
-
   }
-  
   // Media Query pour les mobiles
   @media (max-width: 480px) {
     .container {
-      flex-direction: column;
       align-items: center;
     }
   
     .card {
       width: 90%; 
   }
-  .img-section {
-    background-image: url('../assets/banner-mobile.jpg');
+    
     
 } 
-
-}
+  
