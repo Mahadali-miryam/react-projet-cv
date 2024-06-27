@@ -4,8 +4,6 @@ import  FreshFood from'../assets/portfolio/fresh-food.jpg'
 import  RestaurantJaponais from'../assets/portfolio/restaurant-japonais.jpg'
 import  EspaceBienEtre from'../assets/portfolio/espace-bien-etre.jpg'
 
-
-// Fonction ou composant séparé pour l'affichage du profil
 const ProjectsSection = ({ title, subtitle }) => {
     return (
         <div className="services-section">

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../style/projects.scss';
+import '../style/blog.scss';
 import  Coder from'../assets/blog/coder.jpg'
 import  Croissance from'../assets/blog/croissance.jpg'
 import  Google from'../assets/blog/google.jpg'
