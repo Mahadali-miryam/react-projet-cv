@@ -4,9 +4,6 @@ import ordi from '../assets/ordi.png';
 import code from '../assets/code.png'; 
 import search from '../assets/search.png'; 
 
-
-
-// Fonction ou composant séparé pour l'affichage du profil
 const ServicesSection = ({ title, subtitle }) => {
     return (
         <div className="services-section">
