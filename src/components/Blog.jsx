@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../style/blog.scss';
 import  Coder from'../assets/blog/coder.jpg'
 import  Croissance from'../assets/blog/croissance.jpg'
@@ -7,7 +7,67 @@ import  Screens from'../assets/blog/screens.jpg'
 import  Seo from'../assets/blog/seo.jpg'
 import  Technos from'../assets/blog/technos.png'
 
-// Fonction ou composant séparé pour l'affichage du profil
+
+// Données des articles stockées dans un tableau d'objets pour faciliter la gestion
+const articles = [
+  {
+    id: 1,
+    title: 'Coder son site en HTML/CSS',
+    img: Coder,
+    date: 'Publié le 22 août 2022',
+    alt: 'code HTML sur un écran montrant un exemple de codage.',
+    content: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+  },
+
+  {
+    id: 2,
+    title: 'Vendre ses produits sur le web',
+    img: Croissance,
+    date: 'Publié le 20 aout 2022',
+    alt: 'Graphique de croissance symbolisant la vente de produits en ligne.',
+    content: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+  },
+ 
+  {
+    id: 3,
+    title: 'Se positionner sur Google',
+    img: Google,
+    date: 'Publié le 1 aout 2022',
+    alt: 'Ordinateur affichant le logo Google sur l\' écran.',
+    content: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+  },
+
+  {
+    id: 4,
+    title: 'Coder en responsive design',
+    img: Screens,
+    date: ' Publié le 31 juillet 2022 ',
+    alt: 'Plusieurs écrans affichant des sites web adaptatifs.',
+    content: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+  },
+
+  {
+    id: 5,
+    title: 'Technique et référencement',
+    img: Seo,
+    date: ' Publié le 31 juillet 2022 ',
+    alt: 'Icône de loupe sur des mots-clés, représentant le SEO.',
+    content: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+  },
+
+  {
+    id: 6,
+    title: 'Apprendre à coder',
+    img: Technos,
+    date: ' Publié le 12 juillet 2022 ',
+    alt: 'Diverses technologies de programmation illustrées par des icônes.',
+    content: 'Some quick example text to build on the card title and make up the bulk of the card\'s content.'
+  },
+
+];
+
+
+// Composant fonctionnel pour afficher le titre et le sous-titre de la section blog
 const BlogSection = ({ title, subtitle }) => {
     return (
         <div className="services-section">
@@ -18,97 +78,38 @@ const BlogSection = ({ title, subtitle }) => {
     );
 };
 
+// Composant principal Blog qui utilise le tableau d'articles pour générer dynamiquement la liste des articles
 const Blog = () => {
-    // Utilisation d'un hook pour gérer l'état du profil
-    const [blog] = useState({
-        title: 'Blog',
-        subtitle: 'Retrouver ici quelques articles sur le développement web.'        
-});
-
-return (
+  return (
     <div>
-    <div className="image-section banner"></div>
-    
-    <div className="m-container">
+      <div className="image-section banner"></div>
+      <div className="m-container">
         <div className="col-12 col-md-6">
-            <BlogSection title={blog.title} subtitle={blog.subtitle}/>
+          <BlogSection title="Blog" subtitle="Retrouver ici quelques articles sur le développement web." />
         </div>
-    <div className="container">
-
-        <div className="card" style={{width: "18rem"}}>
-            <img src={Coder} className="card-img-top" alt="code HTML sur un écran montrant un exemple de codage."/>
-        <div className="card-body">
-        <h5 className="card-title">Coder son site en HTML/CSS</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="btn btn-outline-primary">Lire la suite</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-           Publié le 22 aout 2022
-        </div>
-    </div>
-
-        <div className="card" style={{width: "18rem"}}>
-            <img src={Croissance} className="card-img-top" alt="Graphique de croissance symbolisant la vente de produits en ligne"/>
-        <div className="card-body">
-        <h5 className="card-title">Vendre ses produits sur le web</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="btn btn-outline-primary">Lire la suite</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-        Publié le 20 aout 2022
-        </div>
-    </div>
-
-        <div className="card" style={{width: "18rem"}}>
-            <img src={Google} className="card-img-top" alt="Ordinateur affichant le logo Google sur l'écran"/>
-        <div className="card-body">
-            <h5 className="card-title">Se positionner sur Google</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                <a href="#" className="btn btn-outline-primary">Lire la suite</a>
-        </div>
-            <div class="card-footer text-body-secondary">
-                        Publié le 1 aout 2022
+        <div className="container">
+          {articles.map((article) => (
+            <article key={article.id} className="card" style={{ width: '18rem' }}>
+              <img src={article.img} className="card-img-top" alt={article.alt} />
+              <div className="card-body">
+                <header>
+                  <h5 className="card-title">{article.title}</h5>
+                </header>
+                <section>
+                  <p className="card-text">{article.content}</p>
+                  <button className="btn btn-primary">Lire la suite</button>
+                </section>
                 </div>
-            </div>
-
-            <div className="card" style={{width: "18rem"}}>
-            <img src={Screens} className="card-img-top" alt="Plusieurs écrans affichant des sites web adaptatifs"/>
-        <div className="card-body">
-        <h5 className="card-title">Coder en responsive design</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="btn btn-outline-primary">Lire la suite</a>
+                <footer>
+                  <div className="card-footer text-body-secondary">{article.date}</div>
+                </footer>
+              
+            </article>
+          ))}
         </div>
-        <div class="card-footer text-body-secondary">
-        Publié le 31 juillet 2022
-        </div>
+      </div>
     </div>
-
-    <div className="card" style={{width: "18rem"}}>
-            <img src={Seo} className="card-img-top" alt="Icône de loupe sur des mots-clés, représentant le SEO"/>
-        <div className="card-body">
-        <h5 className="card-title">Technique et référencement</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="btn btn-outline-primary">Lire la suite</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-        Publié le 30 juillet 2022
-        </div>
-    </div>
-
-    <div className="card" style={{width: "18rem"}}>
-            <img src={Technos} className="card-img-top" alt="Diverses technologies de programmation illustrées par des icônes"/>
-        <div className="card-body">
-        <h5 className="card-title">Apprendre à coder</h5>
-        <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-        <a href="#" className="btn btn-outline-primary">Lire la suite</a>
-        </div>
-        <div class="card-footer text-body-secondary">
-        Publié le 12 juillet 2022
-        </div>
-    </div>
-        </div>
-    </div>
-</div>
-    );
+  );
 };
+
 export default Blog;
