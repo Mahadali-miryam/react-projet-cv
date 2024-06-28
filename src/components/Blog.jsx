@@ -111,4 +111,4 @@ return (
 </div>
     );
 };
-export default Blog
+export default Blog;
