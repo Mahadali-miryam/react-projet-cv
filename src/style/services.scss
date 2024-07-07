@@ -53,15 +53,20 @@
   align-items: center; 
   text-align: center; 
   padding: 10px; 
+
   }
 
 .box img {
   width: 20%; 
-  height: auto; 
+  height: auto;
+  &:hover {
+    .service-icon {
+      color: #cde1f8;
+    }
   }
+}
 
-
-// Media queries pour les tablettes
+// Media querie pour les tablettes
 @media (min-width: 768px)and (max-width: 1024px) {
   .banner {
     background-image: url('../assets/banner-tablette.jpg'); 

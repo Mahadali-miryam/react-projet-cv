@@ -7,6 +7,8 @@ import Projects from './components/Projects';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
 import Services from './components/Services';
+import LegalMentions from './components/LegalMentions';
+
 
  function App() {
   return (
@@ -20,11 +22,13 @@ import Services from './components/Services';
           <Route path="/Services" element={<Services/>} />
           <Route path="/Projects" element={<Projects />} />
           <Route path="/Contact" element={<Contact />} />
-          <Route path="/Blog" element={<Blog />} />
+          <Route path="/Blog" element={<Blog/>} />
+          <Route path="/LegalMentions" element={<LegalMentions/>} />
+         
       </Routes>
      
       <Footer />
-      <button onClick={() => window.scrollTo(0, 0)} className="back-to-top">↑</button>
+     
     </div>
   
   );
