@@ -39,8 +39,8 @@ const Home = () => {
         <div className="main-container">
             <div className="home-container">
              <div className="col-12 col-md-6">
-                <ProfileSection nom={profile.nom} role={profile.role}/>
-                <button className="btn btn-primary" type="submit">En savoir plus</button>
+              <ProfileSection nom={profile.nom} role={profile.role}/>
+              <button className="btn btn-primary" type="submit">En savoir plus</button>
             </div>
         </div>
 
@@ -81,8 +81,8 @@ const Home = () => {
                 </div>
             </div>
         </div>
-</div>
-    );
+    </div>
+);
 }
 
 export default Home;

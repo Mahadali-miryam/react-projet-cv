@@ -32,21 +32,21 @@ const Services = () => {
 
             <div className="container">
                 <div className="box">
-                    <img src={ordi} alt="ordi" className="ordi"/>
+                    <img src={ordi} alt="ordi" className="ordi service-icon"/>
                         <h2>ux design</h2>
                             <p>L'<strong>UX Design</strong> est une méthode de conception centrée sur l'utilisateur.
                         Son but est d'offrir une expérience de navigation optimale à l'internaute. </p>
                 </div>
 
                 <div className="box">
-                    <img src={code} alt="Logo 2" className="code"/>
+                    <img src={code} alt="Logo 2" className="code service-icon"/>
                         <h2>Développeur WEB</h2>
                             <p>Le <strong>développement de sites web</strong>repose sur l'utilisation des languages HTML, CSS,
                         JavaScript et PHP. </p>
                 </div>
 
                 <div className="box">
-                    <img src={search} alt="Logo 3" className="search"/>
+                    <img src={search} alt="Logo 3" className="search service-icon"/>
                         <h2>Référencement</h2>
                             <p>Le <strong>référencement naturel d'un site</strong>, aussi appelé SEO, 
                         consiste à metttre des techniques en oeuvre pour améliorer sa position dans les résultats des moteurs de recherche.</p>

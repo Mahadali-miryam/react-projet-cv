@@ -30,7 +30,7 @@
    
 }
   
-  // Media Query pour les tablettes
+  // Media Querie pour les tablettes
   @media (min-width: 768px)and (max-width: 1024px) {
     .container {
       justify-content: center;
@@ -42,7 +42,7 @@
       margin: 10px; 
     } 
   }
-  // Media Query pour les mobiles
+  // Media Querie pour les mobiles
   @media (max-width: 480px) {
     .container {
       align-items: center;

@@ -20,7 +20,7 @@ const Projects = () => {
     // Utilisation d'un hook pour gérer l'état des projets
     const [projects] = useState([
         {
-            id: 1,
+            id:1.,
             title: 'Fresh food',
             img: FreshFood,
             description: "Réalisation d'un site avec commande en ligne.",
@@ -29,7 +29,7 @@ const Projects = () => {
         },  
 
         {
-            id: 2,
+            id: 2.,
             title: 'Restaurant-Japonais',
             img: RestaurantJaponais,
             description: "Réalisation d'un site vitrine.",
@@ -37,7 +37,7 @@ const Projects = () => {
             alt: "Différents sushis" ,
         },
         {
-            id: 3,
+            id: 3.,
             title: 'Espace-Bien-Etre',
             img: EspaceBienEtre,
             description: "Réalisation d'un site vitrine pour un praticien de bien-être.",

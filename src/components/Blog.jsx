@@ -97,7 +97,7 @@ const Blog = () => {
                 </header>
                 <section>
                   <p className="card-text">{article.content}</p>
-                  <button className="btn btn-primary">Lire la suite</button>
+                  <button className="btn btn-outline-primary">Lire la suite</button>
                 </section>
                 </div>
                 <footer>

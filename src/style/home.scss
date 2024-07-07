@@ -81,9 +81,13 @@
   background-color: #298eff; 
   color: #EEE;
 }
+.social-icons img {
+  width: 25px; 
+  height: auto; 
+  margin-right: 15px; 
+}
 
-
-// Media query pour les tablettes
+// Media queries pour les tablettes
 @media (max-width: 768px) {
   .main-container.home-container {
     background-image: url('../assets/hero-bg-tablette.jpg');
@@ -113,7 +117,7 @@
 
 
 
-// Media query pour les mobiles
+// Media queries pour les mobiles
 @media (max-width: 480px) {
 .main-container  .home-container {
   background-image: url('../assets/hero-bg-mobile.jpg');
@@ -127,5 +131,77 @@
       }
     } 
   }
+  
+// FOOTER
+  
+.footer-container {
+  background-color: #EEEEEE; 
+  color: #1e1e1e; 
+  padding: 3rem 0; 
+  display: flex;
+
+  .footer-content {
+    justify-content: space-around; 
+  }
+ 
+  .footer-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-width: 160px; 
+    margin: 0 40px; 
+  padding: 30px;
+
+    p, ul {
+      margin: 0 0 10px; 
+    }
+  
+    ul {
+      list-style-type: none; 
+      padding: 0; 
+  
+      li {
+        margin-bottom: 5px; 
+      }
+    }
+  }
+}
+// Media queries pour les tablettes
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    padding: 2rem 0;
 
 
+      ul {
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 10px; 
+      }
+    }
+  }
+
+
+// Media queries pour les mobiles
+@media (max-width: 480px) {
+  .footer-container {
+    padding: 1.5rem 0;
+
+    .footer-column {
+      margin: 0 10px; 
+      padding: 15px 0; 
+
+      ul {
+        padding: 0;
+      }
+
+      li {
+        margin-bottom: 8px; 
+      }
+    }
+  }
+}
