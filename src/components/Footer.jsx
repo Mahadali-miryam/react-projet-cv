@@ -36,7 +36,7 @@ function Footer() {
       <div className="footer-container">
     <div className="footer-content">
       <div className="footer-column">
-            <p>John Doe</p>
+            <h5>John Doe</h5>
             <p>40 Rue Laure Diebold 69009 Lyon, France</p>
             <p>Téléphone:0620304050</p>
             <div>
@@ -57,7 +57,7 @@ function Footer() {
         </div>
       </div>  
           <div className="footer-column">
-            <p>Liens utiles</p>
+            <h5>Liens utiles</h5>
             <ul>
               <li><Link to="/home">Accueil</Link></li>
               <li><Link to="/about">À propos</Link></li>
@@ -69,7 +69,7 @@ function Footer() {
         
          
         <div className="footer-column">
-            <p>Mes dernières Réalisations</p>
+            <h5>Mes dernières Réalisations</h5>
             <ul>
               <li><Link to="/projects#1.">Fresh food</Link></li>
               <li><Link to="/projects#2.">Restaurant Akira</Link></li>
@@ -78,7 +78,7 @@ function Footer() {
           </div>
          
           <div className="footer-column">
-            <p>Mes derniers Articles</p> 
+            <h5>Mes derniers Articles</h5> 
             <ul>
               <li><Link to="/blog#1">Coder son site en HTML/CSS</Link></li>
               <li><Link to="/blog#2">Vendre ses produits sur le web</Link></li>
