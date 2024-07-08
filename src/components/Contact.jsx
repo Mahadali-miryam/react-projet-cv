@@ -5,9 +5,9 @@ import maps from '../assets/maps.png';
 import smartphone from '../assets/smartphone.png';
 
 
-const SERVICE_ID = 'service_72sumdl';
-const TEMPLATE_ID = 'template_dx8yxvh';
-const USER_ID = 'DBqIFJc9dpmFMgkQB';
+const SERVICE_ID = process.env.REACT_APP_SERVICE_ID;
+const TEMPLATE_ID = process.env.REACT_APP_TEMPLATE_ID;
+const USER_ID = process.env.REACT_APP_USER_ID;
 
 
 const ContactSection = ({ title, subtitle }) => (
@@ -61,7 +61,7 @@ const Contact = () => {
           <adress>40 Rue Laure Diebold, 69009 Lyon, France</adress> <br />
       <div className="phone-container">
         <img src={smartphone} alt="Téléphone" className="icon-smartphone" />
-        <p>06 20 34 05 00</p>
+        <p>06 20 30 40 50</p>
       </div>
       <div className="google-map">
                 <iframe
