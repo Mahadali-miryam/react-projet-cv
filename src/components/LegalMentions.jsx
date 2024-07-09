@@ -59,7 +59,7 @@
             </button>
             </h2>
         <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionMentionsLegales">
-            <h4>Always Data</h4>
+            <h4> Always Data</h4>
                 <div className="coordinates">
                     <address><img src={maps} alt="Adresse" className="icon-maps" />
                         91 rue du Faubourg Saint Honoré 
